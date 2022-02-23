@@ -42,6 +42,7 @@ div.kartinka {
     float: left;
     margin-right: 15px;
 }
+a {line-height: 1.5;}
 
 /* задаются стили для окон отображения как у планшета */
 @media all and (max-width: 800px) {
