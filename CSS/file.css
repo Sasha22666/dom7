@@ -1,8 +1,7 @@
-* {font-family: sans-serif;}
+        * {font-family: sans-serif;}
         .zagolovki1 {
             color: blue;
             font-size: 20px;
-            
             text-align: center;
             line-height: 2;
             background-color: #ADD8E6;
