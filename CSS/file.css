@@ -1,92 +1,109 @@
-/* задаются стили для широких окон отображения */
-.zagolovki1 {
-    color: blue;
-    font-size: 20px;
-    font-family: sans-serif;
-    text-align: center;
-    line-height: 2;
-    background-color: #ADD8E6;
-    clear: both
-}
+* {font-family: sans-serif;}
+        .zagolovki1 {
+            color: blue;
+            font-size: 20px;
+            
+            text-align: center;
+            line-height: 2;
+            background-color: #ADD8E6;
+            clear: both
+        }
 
-.zagolovki2 {
-    font-weight: bold;
-    font-size: 18px;
-    text-align: center;
-}
+        .zagolovki2 {
+            font-weight: bold;
+            font-size: 18px;
+            text-align: center;
+        }
 
-.sodergimoe {
-    background: url(../yellow.gif) left top repeat-y, url(../boll.png) right top repeat-y;
-}
+        .sodergimoe {
+            background: url(yellow.gif) left top repeat-y, url(boll.png) right top repeat-y;
+        }
 
-.sodergimoe:after {
-    content: ".";
-    visibility: hidden;
-    display: block;
-    height: 0;
-    clear: both;
-}
+        .sodergimoe:after {
+            content: ".";
+            visibility: hidden;
+            display: block;
+            height: 0;
+            clear: both;
+        }
 
-.menu {
-    width: 150px;
-    float: left
-}
+        .menu {
+            width: 150px;
+            float: left
+        }
 
-div.tekst {
-    margin-left: 200px;
-    padding-top: 1px
-}
+        div.tekst {
+            margin-left: 200px;
+            padding-top: 1px;
+            /*чтобы не было зазора под шапкой */
 
-div.kartinka {
-    content: url(../fotball2.png);
-    float: left;
-    margin-right: 15px;
-}
-a {line-height: 1.5;}
+        }
 
-/* задаются стили для окон отображения как у планшета */
-@media all and (max-width: 800px) {
-    div.zagolovki1 {
-        visibility: hidden;
-        width: 0px;
-        height: 0px;
-    }
+        div.kartinka {
+            content: url(fotball2.png);
+            float: left;
+            margin-right: 15px;
+        }
 
-    div.tekst div.kartinka {
-        float: none;
-        width: 100%;
-    }
+        div.menumob {
+            visibility: hidden;
+            width: 0px;
+            height: 0px;
+            padding-top: 1px
+        /*чтобы не было зазора перед подвалом */
+        }
 
-    div.sodergimoe {
-        background: url(../yellow.gif) left top repeat-y;
-    }
-}
+        /* задаются стили для окон отображения как у планшета */
+        @media all and (max-width: 700px) {
+            div.zagolovki1 {
+                visibility: hidden;
+                width: 0px;
+                height: 0px;
+            }
 
-/* задаются стили для окон отображения как у мобильных устройств */
-@media all and (max-width: 400px) {
-    div.zagolovki1 {
-        visibility: hidden;
-        width: 0px;
-        height: 0px;
-    }
+            div.tekst div.kartinka {
+                float: none;
+                width: 100%;
+            }
 
-    div.sodergimoe {
-        background: none;
-    }
+            div.sodergimoe {
+                background: url(yellow.gif) left top repeat-y;
+            }
 
-    div.tekst div.kartinka {
-        float: none;
-        width: 100%;
-    }
+        }
 
-    div.menu {
-        float: none;
-        visibility: hidden;
-        height: 0px;
-    }
+        /* задаются стили для окон отображения как у мобильных устройств */
+        @media all and (max-width: 400px) {
+            div.zagolovki1 {
+                visibility: hidden;
+                width: 0px;
+                height: 0px;
+            }
 
-    div.tekst {
+            div.sodergimoe {
+                background: none;
+            }
 
-        margin-left: 0px;
-    } 
-}
+            div.tekst div.kartinka {
+                float: none;
+                width: 100%;
+            }
+
+            div.menu {
+                visibility: hidden;
+                width: 0px;
+                height: 0px;
+            }
+
+            div.tekst {
+                margin-left: 0px;
+            }
+
+            div.menumob {
+                background: #F0E68C;
+                visibility: visible;
+                width: 100%;
+                height: 100%;
+                padding-bottom: 20px
+            }
+        }
