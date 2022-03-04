@@ -39,7 +39,7 @@
         }
 
         div.kartinka {
-            content: url(//fotball2.png);
+            content: url(../fotball2.png);
             float: left;
             margin-right: 15px;
         }
