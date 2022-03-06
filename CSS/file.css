@@ -53,7 +53,7 @@
         }
 
         /* задаются стили для окон отображения как у планшета */
-        @media all and (max-width: 700px) {
+        @media all and (max-width: 800px) {
             div.zagolovki1 {
                 visibility: hidden;
                 width: 0px;
@@ -72,7 +72,7 @@
         }
 
         /* задаются стили для окон отображения как у мобильных устройств */
-        @media all and (max-width: 400px) {
+        @media all and (max-width: 500px)
             div.zagolovki1 {
                 visibility: hidden;
                 width: 0px;
